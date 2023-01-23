@@ -1,6 +1,5 @@
-<?php $titre = 'Mon Ticketing'; ?>
+<?php $this->titre = 'Mon Ticketing'; ?>
 
-<?php ob_start(); ?>
 <?php foreach ($tickets as $ticket): ?>
     <article>
         <header>
@@ -14,6 +13,3 @@
     </article>
     <hr />
 <?php endforeach; ?>
-<?php $contenu = ob_get_clean(); ?>
-
-<?php require 'gabarit.php'; ?>

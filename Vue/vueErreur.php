@@ -1,7 +1,2 @@
-<?php $titre = 'Mon Ticketing'; ?>
-
-<?php ob_start() ?>
+<?php $this->titre = 'Mon Ticketing'; ?>
 <p>Une erreur est survenue : <?= $msgErreur ?></p>
-<?php $contenu = ob_get_clean(); ?>
-
-<?php require 'gabarit.php'; ?>
