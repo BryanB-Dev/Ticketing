@@ -4,10 +4,11 @@
 <?php foreach ($tickets as $ticket): ?>
     <article>
         <header>
-            <a href="<?= "ticket.php?id=" . $ticket['id'] ?>">
-                <h1 class="titreBillet"><?= $ticket['titre'] ?></h1>
+            <a href="<?= "index.php?action=ticket&id=" . $ticket['id'] ?>">
+                <h1 class="titreticket"><?= $ticket['titre'] ?></h1>
             </a>
             <time><?= $ticket['date'] ?></time>
+            - <?= $ticket['etat'] ?>
         </header>
         <p><?= $ticket['contenu'] ?></p>
     </article>

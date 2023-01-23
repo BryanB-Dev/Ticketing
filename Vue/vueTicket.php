@@ -3,8 +3,9 @@
 <?php ob_start(); ?>
 <article>
     <header>
-        <h1 class="titreBillet"><?= $ticket['titre'] ?></h1>
+        <h1 class="titreticket"><?= $ticket['titre'] ?></h1>
         <time><?= $ticket['date'] ?></time>
+        - <?= $ticket['etat'] ?>
     </header>
     <p><?= $ticket['contenu'] ?></p>
 </article>
@@ -12,9 +13,9 @@
 <header>
     <h1 id="titreReponses">Réponses à <?= $ticket['titre'] ?></h1>
 </header>
-<?php foreach ($messages as $message): ?>
-    <p><?= $message['auteur'] ?> dit :</p>
-    <p><?= $message['contenu'] ?></p>
+<?php foreach ($commentaires as $commentaire): ?>
+    <p><?= $commentaire['auteur'] ?> dit :</p>
+    <p><?= $commentaire['contenu'] ?></p>
 <?php endforeach; ?>
 <?php $contenu = ob_get_clean(); ?>
 
