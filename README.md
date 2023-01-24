@@ -4,7 +4,7 @@ Projet réalisé à partir du projet [MonBlog](https://github.com/bpesquet/MonBl
 
 ## Construit avec
 
-* HTML5, CSS3
+* HTML5, CSS3, JS
 
 * PHP, MariaDB
 
